@@ -1,0 +1,7 @@
+This directory contains:
+* the human superTranscript fasta file and its corresponding annotation, human_super_reference.tar.gz.
+* the scripts used to create the human superTranscript reference. See construct_superTranscript_from_genome.sh 
+  for the commands used. This script takes a genome fasta file and annotation. It uses the R scripts 
+  generate_flattened_gtf.R and make_super_reference_annotation.R. construct_superTranscript_from_genome.sh
+  may be adapted to other genomes for the purposes for generating a superTranscriptome reference.
+
