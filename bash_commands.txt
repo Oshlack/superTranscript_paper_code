@@ -90,14 +90,12 @@ STAR --runMode genomeGenerate --runThreadN 16 --genomeDir STARIndex --genomeFast
 
 
 #Get the files
-firstpass=/group/bioi1/anthonyh/CuffDiff_Comparison/ST_20120709_trinity_corset/1pass
-secondpass=/group/bioi1/anthonyh/CuffDiff_Comparison/ST_20120709_trinity_corset/2pass
-GenomeDir=/group/bioi1/anthonyh/CuffDiff_Comparison/ST_20120709_trinity_corset/STARIndex
-outdir=/group/bioi1/anthonyh/CuffDiff_Comparison/ST_20120709_trinity_corset/
-GenomeFasta=/group/bioi1/anthonyh/CuffDiff_Comparison/ST_20120709_trinity_corset/SuperDuper.fasta
-GenomeAnno=/group/bioi1/anthonyh/CuffDiff_Comparison/ST_20120709_trinity_corset/SuperDuper.gtf
-
-module load star/2.5.2a
+firstpass=ST_20120709_trinity_corset/1pass
+secondpass=ST_20120709_trinity_corset/2pass
+GenomeDir=ST_20120709_trinity_corset/STARIndex
+outdir=ST_20120709_trinity_corset/
+GenomeFasta=ST_20120709_trinity_corset/SuperDuper.fasta
+GenomeAnno=ST_20120709_trinity_corset/SuperDuper.gtf
 
 #First pass mapping
 cd /group/bioi1/shared/public_data/cuffdiff2_data/
