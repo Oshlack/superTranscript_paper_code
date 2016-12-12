@@ -7,3 +7,4 @@ The repository contains code and scripts used to generate and analyse data for t
 - human superTranscriptome, its annotation and the scripts used to create them
 - General script to make DEXSeq output from counts matrices 
 - Bash commands.txt - An assortment of various commands and examples of how various parts of the analysis were run (e.g. STAR, Kallisto, Lace, featureCounts, Salmon, BLAT)
+- varCalling.sh A script for invoking the GATK pipeline on the sample SRR493366.sorted.bam which was mapped to SuperTramscriptome
