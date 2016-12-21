@@ -1,27 +1,30 @@
-10014	BLAT	match_part	23	448	99.89	+	.	Parent=CUFF-GF1.5157.1_mid1;Target=CUFF-GF1.5157.1 1 426
-10014	BLAT	match_part	551	1024	99.89	+	.	Parent=CUFF-GF1.5157.1_mid1;Target=CUFF-GF1.5157.1 427 900
-10014	BLAT	match_part	21	160	100.00	+	.	Parent=CUFF-GF1.5157.2_mid1;Target=CUFF-GF1.5157.2 1 140
-10014	BLAT	match_part	235	385	100.00	+	.	Parent=CUFF-GF1.5157.2_mid1;Target=CUFF-GF1.5157.2 141 291
-10014	BLAT	match_part	57	160	99.74	+	.	Parent=ENSGALT00000039951.2_mid1;Target=ENSGALT00000039951.2 1 104
-10014	BLAT	match_part	235	448	99.74	+	.	Parent=ENSGALT00000039951.2_mid1;Target=ENSGALT00000039951.2 105 318
-10014	BLAT	match_part	551	621	99.74	+	.	Parent=ENSGALT00000039951.2_mid1;Target=ENSGALT00000039951.2 319 389
-10014	BLAT	match_part	1	160	100.00	+	.	Parent=comp157955_c0_seq8_mid1;Target=comp157955_c0_seq8 1 160
-10014	BLAT	match_part	1	402	100.00	+	.	Parent=comp157955_c0_seq7_mid1;Target=comp157955_c0_seq7 1 402
-10014	BLAT	match_part	1	1077	100.00	+	.	Parent=comp157955_c0_seq6_mid1;Target=comp157955_c0_seq6 1 1077
-10014	BLAT	match_part	1	778	100.00	+	.	Parent=comp157955_c0_seq5_mid1;Target=comp157955_c0_seq5 1 778
-10014	BLAT	match_part	1	160	100.00	+	.	Parent=comp157955_c0_seq4_mid1;Target=comp157955_c0_seq4 1 160
-10014	BLAT	match_part	1	402	100.00	+	.	Parent=comp157955_c0_seq3_mid1;Target=comp157955_c0_seq3 1 402
-10014	BLAT	match_part	1	160	100.00	+	.	Parent=comp157955_c0_seq2_mid1;Target=comp157955_c0_seq2 1 160
-10014	BLAT	match_part	1	160	100.00	+	.	Parent=comp157955_c0_seq1_mid1;Target=comp157955_c0_seq1 1 160
-10014	BLAT	match_part	235	1077	100.00	+	.	Parent=comp157955_c0_seq2_mid1;Target=comp157955_c0_seq2 161 1003
-10014	BLAT	match_part	235	402	100.00	+	.	Parent=comp157955_c0_seq4_mid1;Target=comp157955_c0_seq4 161 328
-10014	BLAT	match_part	235	778	100.00	+	.	Parent=comp157955_c0_seq8_mid1;Target=comp157955_c0_seq8 161 704
-10014	BLAT	match_part	235	402	100.00	+	.	Parent=comp157955_c0_seq1_mid1;Target=comp157955_c0_seq1 161 328
-10014	BLAT	match_part	496	1077	100.00	+	.	Parent=comp157955_c0_seq3_mid1;Target=comp157955_c0_seq3 403 984
-10014	BLAT	match_part	496	778	100.00	+	.	Parent=comp157955_c0_seq4_mid1;Target=comp157955_c0_seq4 329 611
-10014	BLAT	match_part	496	1077	100.00	+	.	Parent=comp157955_c0_seq1_mid1;Target=comp157955_c0_seq1 329 910
-10014	BLAT	match_part	496	778	100.00	+	.	Parent=comp157955_c0_seq7_mid1;Target=comp157955_c0_seq7 403 685
-10014	BLAT	match_part	794	1077	100.00	+	.	Parent=comp157955_c0_seq8_mid1;Target=comp157955_c0_seq8 705 988
-10014	BLAT	match_part	794	1077	100.00	+	.	Parent=comp157955_c0_seq7_mid1;Target=comp157955_c0_seq7 686 969
-10014	BLAT	match_part	794	1077	100.00	+	.	Parent=comp157955_c0_seq5_mid1;Target=comp157955_c0_seq5 779 1062
-10014	BLAT	match_part	794	1077	100.00	+	.	Parent=comp157955_c0_seq4_mid1;Target=comp157955_c0_seq4 612 895
+10014	psl2gtf	exon	57	160	.	+	.	gene_id "10014"; transcript_id "ENSGALT00000039951.2";
+10014	psl2gtf	exon	235	449	.	+	.	gene_id "10014"; transcript_id "ENSGALT00000039951.2";
+10014	psl2gtf	exon	552	622	.	+	.	gene_id "10014"; transcript_id "ENSGALT00000039951.2";
+10014	Cufflinks	exon	21	160	.	+	.	gene_id "XLOC_000001"; transcript_id "TCONS_00000002"; exon_number "1"; oId "CUFF.1.2"; tss_id "TSS1";
+10014	Cufflinks	exon	235	403	.	+	.	gene_id "XLOC_000001"; transcript_id "TCONS_00000002"; exon_number "2"; oId "CUFF.1.2"; tss_id "TSS1";
+10014	Cufflinks	exon	552	1046	.	+	.	gene_id "XLOC_000001"; transcript_id "TCONS_00000002"; exon_number "3"; oId "CUFF.1.2"; tss_id "TSS1";
+10014	Cufflinks	exon	21	160	.	+	.	gene_id "XLOC_000001"; transcript_id "TCONS_00000001"; exon_number "1"; oId "CUFF.1.1"; tss_id "TSS1";
+10014	Cufflinks	exon	235	449	.	+	.	gene_id "XLOC_000001"; transcript_id "TCONS_00000001"; exon_number "2"; oId "CUFF.1.1"; tss_id "TSS1";
+10014	Cufflinks	exon	552	1046	.	+	.	gene_id "XLOC_000001"; transcript_id "TCONS_00000001"; exon_number "3"; oId "CUFF.1.1"; tss_id "TSS1";
+10014	Cufflinks	exon	551	1078	.	-	.	gene_id "XLOC_000002"; transcript_id "TCONS_00000003"; exon_number "1"; oId "CUFF.2.1"; tss_id "TSS2";
+10014	psl2gtf	exon	1	160	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq8";
+10014	psl2gtf	exon	1	402	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq7";
+10014	psl2gtf	exon	1	1078	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq6";
+10014	psl2gtf	exon	1	779	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq5";
+10014	psl2gtf	exon	1	160	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq4";
+10014	psl2gtf	exon	1	402	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq3";
+10014	psl2gtf	exon	1	160	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq1";
+10014	psl2gtf	exon	1	160	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq2";
+10014	psl2gtf	exon	235	1078	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq2";
+10014	psl2gtf	exon	235	402	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq4";
+10014	psl2gtf	exon	235	779	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq8";
+10014	psl2gtf	exon	235	402	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq1";
+10014	psl2gtf	exon	497	779	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq7";
+10014	psl2gtf	exon	497	1078	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq1";
+10014	psl2gtf	exon	497	779	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq4";
+10014	psl2gtf	exon	497	1078	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq3";
+10014	psl2gtf	exon	795	1078	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq5";
+10014	psl2gtf	exon	795	1078	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq7";
+10014	psl2gtf	exon	795	1078	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq4";
+10014	psl2gtf	exon	795	1078	.	+	.	gene_id "10014"; transcript_id "comp157955_c0_seq8";

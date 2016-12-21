@@ -1,0 +1,6 @@
+ensGene.gtf
+refGene.gtf
+/mnt/storage/nadiad/work_area/20160601_superTranscript/chicken/tophat_mapped/tophat_Gonads_female_1_Ac02g4acxx_GGCTAC_L003/transcripts.gtf
+/mnt/storage/nadiad/work_area/20160601_superTranscript/chicken/tophat_mapped/tophat_Gonads_female_2_Ac02g4acxx_CTTGTA_L003/transcripts.gtf
+/mnt/storage/nadiad/work_area/20160601_superTranscript/chicken/tophat_mapped/tophat_Gonads_Male_1_Ac02g4acxx_GATCAG_L003/transcripts.gtf
+/mnt/storage/nadiad/work_area/20160601_superTranscript/chicken/tophat_mapped/tophat_Gonads_Male_2_Ac02g4acxx_TAGCTT_L003/transcripts.gtf
