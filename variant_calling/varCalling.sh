@@ -1,12 +1,17 @@
-## prepare the reference
-GenomeFastaPrefix=Variant_Calling/SuperDuper
-GenomeFasta=$GenomeFastaPrefix.fasta
+# GATK pipeline used to call SNPs on the SuperTranscriptome and genome.
 
+## variable
+GenomeFastaPrefix=SuperDuper
+GenomeFasta=$GenomeFastaPrefix.fasta
+PICARDDIR= #directory to picard tools
+GATKDIR= #directory to GATK
+
+## prepare the reference
 java -jar $PICARDDIR/picard.jar CreateSequenceDictionary R=$GenomeFasta O=$GenomeFastaPrefix.dict
 samtools faidx $GenomeFasta 
 
-java -Xmx6g -jar $PICARDDIR/picard.jar AddOrReplaceReadGroups I=SRR493366.sorted.bam O=rg_added_sorted.bam \
-SO=coordinate RGLB=CuffDiff RGPL=ILLUMINA RGPU=lane RGSM=CUFFDIFF VALIDATION_STRINGENCY=LENIENT
+java -Xmx6g -jar $PICARDDIR/picard.jar AddOrReplaceReadGroups I=../alignment2/Aligned.sortedByCoord.out.bam O=rg_added_sorted.bam \
+SO=coordinate RGLB=GB RGPL=ILLUMINA RGPU=lane RGSM=GB VALIDATION_STRINGENCY=LENIENT
 
 #mark duplicates, and create index
 java -Xmx6g -jar $PICARDDIR/picard.jar MarkDuplicates I=rg_added_sorted.bam O=dedupped.bam \
@@ -21,8 +26,7 @@ java -Xmx6g -jar $GATKDIR/GenomeAnalysisTK.jar -T SplitNCigarReads \
 #variant calling
 java -Xmx6g -jar $GATKDIR/GenomeAnalysisTK.jar -T HaplotypeCaller \
 -R $GenomeFasta \
--I split.bam -dontUseSoftClippedBases -stand_call_conf 20.0 -stand_emit_conf 20.0 \
--o variants.vcf 
+-I split.bam -dontUseSoftClippedBases -stand_call_conf 20.0 -o variants.vcf 
 
 #variant filtering
 java -Xmx6g -jar $GATKDIR/GenomeAnalysisTK.jar -T VariantFiltration \

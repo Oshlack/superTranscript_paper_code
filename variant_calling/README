@@ -1,0 +1,4 @@
+This directory contains files used for the SNP calling analysis of the SuperTranscript paper:
+* The GATK commands used to call variants on Genome in a Bottle data ( Genome mapped and SuperTranscript mapped )
+* The c code used to transform superTranscript coordinates into genomic coordinates.
+
