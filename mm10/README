@@ -1,9 +1,0 @@
-#Author: Anthony Hawkins
-#Date: 06/12/16
-#Scripts downloaded from github: https://github.com/Oshlack/superTranscript_paper_code/tree/master/human_superTranscriptome
-
-This directory contains:
-* the mouse superTranscript fasta file and its corresponding annotation, mouse_super_reference.tar.gz.
-* the scripts used to create the mouse superTranscript reference. See construct_superTranscript_from_genome.sh 
-  for the commands used. This script takes a genome fasta file and annotation. It uses the R scripts 
-  generate_flattened_gtf.R and make_super_reference_annotation.R.
