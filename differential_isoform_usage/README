@@ -1,0 +1,4 @@
+This directory contains script and R code for the differential isoform usgae comparison:
+- General script to make DEXSeq output from counts matrices 
+- Bash commands.txt - An assortment of various commands and examples of how various parts of the analysis were run (e.g. STAR, Kallisto, Lace, featureCounts, Salmon, BLAT)
+- ROC.ipynb - A jupyter (ipython) notebook with R commands to reproduce the ROC curve from the paper.
