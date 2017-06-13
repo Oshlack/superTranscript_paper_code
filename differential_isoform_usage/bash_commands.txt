@@ -47,8 +47,8 @@ featureCounts -T 20 -p -B -O --fraction  -a SuperDuper.gff  -f -o Counts/counts.
 # correspondence for DTU analysis   #####
 #########################################
 
-blat SuperDuper.fasta HumanSuperDuper.fasta --minIdentity=98 output.psl
-
+blat SuperDuper.fasta human_super_reference.fasta -minScore=200 -minIdentity=98 genes.psl
+cut -f10,14 genes.psl | grep "^Cluster" | sort -u > cluster_gene_mapping.txt 
 
 #########################################
 # Running Salmon   ######################
