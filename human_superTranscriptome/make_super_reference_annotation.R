@@ -25,8 +25,8 @@ pos1=ann$V4
 pos2=ann$V5
 chrom=ann$V1
 extra_info=strsplit(ann$V9,";")
-trans=gsub(" transcript_id ","",sapply(extra_info,function(x){x[2]}))
-gene=gsub("gene_id ","",sapply(extra_info,function(x){x[1]}))
+trans=gsub(" ","",gsub("transcript_id","",sapply(extra_info,function(x){x[2]})))
+gene=gsub(" ","",gsub("gene_id","",sapply(extra_info,function(x){x[1]})))
 genome_junctions=data.frame(chrom,pos1,pos2,trans,gene,stringsAsFactors=F)
 
 ## get the coordinate transform for each superTranscript from it's fasta ID.
@@ -66,6 +66,7 @@ get_ST_trans<-function(genome_junctions_list){
    st_coords<-apply(genome_junctions_list,1,function(x){
       if(i %% 1000 == 0){ show(i) }
       csri=gene_sri[[x[5]]] #x[1] is chrom, x[5] is gene
+      if(is.null(csri)){ return() }
       get_pos<-function(position){
          pos_diff = (position - csri$chrom_start)
          pos_ind=which(pos_diff <= csri$width & pos_diff >= 0)
@@ -78,7 +79,9 @@ get_ST_trans<-function(genome_junctions_list){
       IRanges(start,end)
    })
    message("making ranges object")
-   trans_ranges=split(unlist(IRangesList(st_coords)),genome_junctions_list$trans)
+   st_coord_ranges=st_coords
+   if(is.null(st_coord_ranges)){ return() }
+   trans_ranges=split(unlist(IRangesList(st_coord_ranges)),genome_junctions_list$trans)
    message("reducing")
    unlist(IRangesList(sapply(trans_ranges,reduce)))
 }
@@ -86,6 +89,7 @@ get_ST_trans<-function(genome_junctions_list){
 ## trying to do all at once takes too long
 chrom_gj=split(genome_junctions,genome_junctions$chrom)
 res=sapply(chrom_gj,get_ST_trans)
+res=res[!sapply(res,is.null)]
 
 trans_gene_map=unique(genome_junctions[,c("trans","gene")])
 genes<-trans_gene_map$gene
